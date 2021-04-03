@@ -1,0 +1,21 @@
+class keys
+{
+	
+	public void run(Bike key)
+	{
+		car.start();
+		
+	}
+
+}
+
+
+
+public class Main 
+{
+
+	public static void main(String[] args)
+	{
+		new keys().run(new Bike());
+	}
+}
