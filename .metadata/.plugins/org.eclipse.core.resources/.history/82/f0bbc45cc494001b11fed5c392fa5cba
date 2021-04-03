@@ -1,7 +1,7 @@
 class keys
 {
 	
-	public void run(Engine key)
+	public void run(Bike key)
 	{
 		key.start();
 		
