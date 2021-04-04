@@ -16,7 +16,7 @@
 <bean id="deptObj" class="com.autowire.HrDept"></bean>
 <bean id="dept" class="com.autowire.HrDept"></bean>
 
-<bean id="company" class="com.autowire.Company" autowire="byName" />
+<bean id="company" class="com.autowire.Company" autowire="byType" />
 
 </beans>
 
