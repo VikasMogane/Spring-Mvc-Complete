@@ -6,14 +6,9 @@ import org.springframework.stereotype.Component;
 @Component 
 public class Company {
 
-	SoftwareEnginer engineer;
-
 	@Autowired
-	public  Company(SoftwareEnginer engineer) {
-		this.engineer = engineer;
-		System.out.println("constructor  -- company");
-	}
-	
+	Engineer engineer;
+
 	public void showInfo()
 	{
 		System.out.println("hello details!");
