@@ -1,4 +1,8 @@
 .metadata
 .index
-*.metadata/
-.metadata/
+.log
+.class
+.index 
+.snap 
+.resources
+.prefs
