@@ -14,9 +14,9 @@
 
 
 <bean id="deptObj" class="com.autowire.HrDept"></bean>
-<bean id="dept" class="com.autowire.HrDept"></bean>
+<bean id="dept1" class="com.autowire.HrDept"></bean>
 
-<bean id="company" class="com.autowire.Company" autowire="byType" />
+<bean id="company" class="com.autowire.Company" />
 
 </beans>
 
@@ -24,9 +24,13 @@
 <!-- 
 <bean id="deptObj"  is not used as it is matched byname but not by bytype
 
-constructor
-byName
-byType  - byType is by default
+constructor - inject by constructor only
+byName - used byname and bytype both
+byType  
 default
+
+
+
+@ autowire dosen't work on primitive , only work on reference type
 
   -->
