@@ -2,7 +2,7 @@ package com.vikas.annotation;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("test")
 public class Company {
 
 	public void showInfo()
