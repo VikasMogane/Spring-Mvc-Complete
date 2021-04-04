@@ -6,8 +6,15 @@
 
 <bean id="deptObj" class="com.autowire.HrDept"></bean>
 
-<bean id="company" class="com.autowire.Company">
-	<constructor-arg name="dept" ref="deptObj" />
-</bean>
+<bean id="company" class="com.autowire.Company" autowire="constructor" />
 
 </beans>
+
+
+<!-- 
+constructor
+byName
+byType
+default
+
+  -->
