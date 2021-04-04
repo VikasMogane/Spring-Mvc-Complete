@@ -9,10 +9,19 @@ import org.springframework.context.annotation.Configuration;
 public class ConfigClass {
 	
 	@Bean
+	public SoftwareEnginer engineer()
+	{
+		return new SoftwareEnginer();
+	}
+	
+	@Bean
 	public Company company()
 	{
-		return new Company();
+		Company company = new Company();
+		company.setEngineer(engineer());
+		return company;
 	}
+	
 	
 
 }

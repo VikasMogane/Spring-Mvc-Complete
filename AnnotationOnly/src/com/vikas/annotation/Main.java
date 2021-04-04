@@ -12,7 +12,7 @@ public class Main {
 		Company company = context.getBean("company",Company.class);
 		company.showInfo();
 		
-		//company.engineer.development();
+		company.engineer.development();
 		
 	}
 }
