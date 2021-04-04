@@ -4,8 +4,10 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean id="engine" class="com.di.Bike">
-	<constructor-arg name="color" value="Blue"></constructor-arg>
+<bean id="bike" class="com.di.Bike">
+	<constructor-arg name="engine" >
+		<bean class="com.di.Engine"></bean>
+	</constructor-arg>
 </bean>
 
 </beans>
