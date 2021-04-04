@@ -17,8 +17,8 @@ public class ConfigClass {
 	@Bean
 	public Company company()
 	{
-		Company company = new Company();
-		company.setEngineer(engineer());
+		Company company = new Company(engineer());
+	
 		return company;
 	}
 	

@@ -8,9 +8,9 @@ public class Company {
 	SoftwareEnginer engineer;
 
 	
-	public void setEngineer(SoftwareEnginer engineer) {
+	public  Company(SoftwareEnginer engineer) {
 		this.engineer = engineer;
-		System.out.println("settter engineer  -- company");
+		System.out.println("constructor  -- company");
 	}
 	
 	public void showInfo()
