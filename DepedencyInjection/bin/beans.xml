@@ -3,17 +3,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id ="engineObj" class="com.di.Engine"></bean>
 
 <bean id="bike" class="com.di.Bike">
-	<constructor-arg name="engine" >
-		<bean class="com.di.Engine"></bean>
-	</constructor-arg>
+	<constructor-arg name="engine" ref="engineObj" />
 </bean>
 
 <bean id="car" class="com.di.Car">
-	<constructor-arg name="engine" >
-		<bean class="com.di.Engine"></bean>
-	</constructor-arg>
+<constructor-arg name="engine" ref="engineObj" />
 </bean>
 
 </beans>
