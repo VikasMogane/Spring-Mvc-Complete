@@ -9,6 +9,13 @@ public class Company {
 		
 	}
 	
+	public void setDept(HrDept dept)
+	{
+		System.out.println("Inside company setter dept method !! ");
+		this.dept = dept;
+		
+	}
+	
 	public void companyWork()
 	{
 		if(dept == null)
