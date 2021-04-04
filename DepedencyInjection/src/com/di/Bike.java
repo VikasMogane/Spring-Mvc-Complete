@@ -3,16 +3,12 @@ package com.di;
 public class Bike 
 {
 	String color;	
-	public Bike()
+	public Bike(String color)
 	{
-		System.out.println("creation of object bike");
-	}
-	
-	public void setColor(String color)
-	{
-		System.out.println("inside setter method");
+		System.out.println("I m constructor");
 		this.color=color;
 	}
+	
 	public void showColor()
 	{
 		System.out.println("Your color is = "+color);

@@ -5,7 +5,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <bean id="engine" class="com.di.Bike">
-	<property name="color" value="blue"></property>
+	<constructor-arg name="color" value="Blue"></constructor-arg>
 </bean>
 
 </beans>
+
