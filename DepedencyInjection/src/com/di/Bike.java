@@ -2,13 +2,13 @@ package com.di;
 
 public class Bike 
 {
-	String color;
-	
-	public void showColor()
-	{
-		System.out.println("your color is = "+color);
-	}
-	
+//	String color;
+//	
+//	public void showColor()
+//	{
+//		System.out.println("your color is = "+color);
+//	}
+//	
 	Engine engine;
 	
 	public Bike(Engine engine)

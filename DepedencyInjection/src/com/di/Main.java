@@ -10,8 +10,9 @@ public class Main {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("beans.xml");
 		Bike bike = ac.getBean("bike",Bike.class);
 		bike.startEngine();
-		bike.showColor();
 	
-
+	
+		Car car = ac.getBean("car",Car.class);
+		car.startEngine();
 	}
 }
