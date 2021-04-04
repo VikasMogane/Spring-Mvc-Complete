@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 public class Employee {
 	
-	@Value("${employee.name}")
+
 	public String empName;
 	
 	@Value("${employee.id}")
@@ -13,7 +13,13 @@ public class Employee {
 	@Value("${employee.skills}")
 	public String empOtherSkills;
 	
-
+	@Value("${employee.name}")
+	public void setEmpName(String empName) {
+		this.empName = empName;
+		System.out.println("setter emp name");
+	}
+	
+	
 	public void showDetails()
 	{
 		System.out.println("Emaployee name is = "+empName);
