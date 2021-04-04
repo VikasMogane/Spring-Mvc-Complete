@@ -8,15 +8,15 @@ public class Employee {
 	public int empId;
 	public String empOtherSkills;
 	
-	@Value("Raj")
+	@Value("${employee.name}")
 	public void setEmpName(String empName) {
 		this.empName = empName;
 	}
-	
+	@Value("${employee.id}")
 	public void setEmpId(int empId) {
 		this.empId = empId;
 	}
-
+	@Value("${employee.skills}")
 	public void setEmpOtherSkills(String empOtherSkills) {
 		this.empOtherSkills = empOtherSkills;
 	}

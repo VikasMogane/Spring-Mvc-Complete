@@ -11,13 +11,7 @@
      <context:annotation-config/>
      <context:property-placeholder location="classpath:employee.info"/>
 
-<bean id="emp" class="com.inject.literal.Employee">
-
-	<property name="empName" value ="${employee.name}" />
-	<property name="empId" value ="${employee.id}" />
-	<property name="empOtherSkills" value ="Reading" />
-	
-</bean>
+<bean id="emp" class="com.inject.literal.Employee" />
 
 </beans>
 
