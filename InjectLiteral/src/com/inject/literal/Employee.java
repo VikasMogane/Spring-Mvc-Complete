@@ -1,11 +1,14 @@
 package com.inject.literal;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class Employee {
 	
 	public String empName;
 	public int empId;
 	public String empOtherSkills;
 	
+	@Value("Raj")
 	public void setEmpName(String empName) {
 		this.empName = empName;
 	}

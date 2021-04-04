@@ -1,5 +1,7 @@
 .index
 .log
+.project
+.classpath
 .class
 .index 
 .snap 

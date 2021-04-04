@@ -9,11 +9,12 @@
            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
                
      <context:annotation-config/>
+     <context:property-placeholder location="classpath:employee.info"/>
 
 <bean id="emp" class="com.inject.literal.Employee">
 
-	<property name="empName" value ="vikas" />
-	<property name="empId" value ="111 " />
+	<property name="empName" value ="${employee.name}" />
+	<property name="empId" value ="${employee.id}" />
 	<property name="empOtherSkills" value ="Reading" />
 	
 </bean>
