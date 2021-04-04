@@ -1,6 +1,6 @@
 package com.autowire;
 
-public class ITDept {
+public class ITDept  implements Dept {
 	
 	public void work()
 	{

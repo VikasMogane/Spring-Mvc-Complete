@@ -13,7 +13,7 @@
 
 
 
-<bean id="deptObj" class="com.autowire.HrDept"></bean>
+<bean id="deptObj" class="com.autowire.ITDept"></bean>
 <bean id="dept1" class="com.autowire.HrDept"></bean>
 
 <bean id="company" class="com.autowire.Company" />

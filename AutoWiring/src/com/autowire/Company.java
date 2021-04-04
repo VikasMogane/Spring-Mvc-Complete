@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 public class Company {
 
 	@Autowired
-	@Qualifier("dept1")  
-	HrDept dept;
+	@Qualifier("deptObj")  
+	Dept dept;
 	
 	public void companyWork()
 	{
